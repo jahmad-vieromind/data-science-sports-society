@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Sports Society | MNSUAM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">DSSS MNSUAM</div>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#register">Register</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Engineering Excellence, Sporting Spirit.</h1>
+        <p>The Data Science Sports Society at MNSUAM connects students through competition, strategy, and teamwork. Join our next event.</p>
+        <br>
+        <a href="#register" style="background:var(--emerald); color:white; padding:1rem 2rem; text-decoration:none; border-radius:6px; font-weight:700; display:inline-block;">Register Now</a>
+    </div>
+    <div class="hero-image">
+        <img src="https://live.staticflickr.com/4078/4912195893_2d20db3f3c_b.jpg" alt="University Cricket Match">
+        <div class="stat-card">
+            <h3>15+</h3>
+            <p>Annual Tournaments</p>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About the Society</h2>
+    <div class="grid-2">
+        <div>
+            <h3>Our Mission</h3>
+            <p>We aim to foster a culture of physical health and mental agility among Data Science students. By organizing regular tournaments, we help students de-stress and build networks beyond the classroom.</p>
+        </div>
+        <div class="committee-card">
+            <h3>Leadership</h3>
+            <p><strong>Faculty Adviser:</strong> Dr. Ali Raza</p>
+            <p><strong>President:</strong> Sarah Khan (DS-7th Sem)</p>
+            <p><strong>Secretary:</strong> Ahmad Iqbal (DS-5th Sem)</p>
+        </div>
+    </div>
+</section>
+
+<section id="events" style="background: var(--gray);">
+        <h2 class="section-title">Events & Sports</h2>
+        <div class="grid-2">
+            <div style="background: white; padding: 2rem; border-radius: 12px;">
+                <h3>Upcoming Event: Inter-Department Cricket Cup 2024</h3>
+                <p><strong>Date:</strong> 25th October 2024</p>
+                <p><strong>Venue:</strong> University Sports Ground</p>
+                <p><strong>Registration Deadline:</strong> 20th October 2024</p>
+                <br>
+                <a href="#register" style="color:var(--emerald); font-weight:700;">Register Now &rarr;</a>
+            </div>
+            <div style="background: white; padding: 2rem; border-radius: 12px;">
+                <h3>Available Sports</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li>✓ Cricket (Men & Women)</li>
+                    <li>✓ Table Tennis</li>
+                    <li>✓ Badminton</li>
+                    <li>✓ Athletics</li>
+                    <li>✓ Chess & E-Sports</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2 class="section-title">Results & Gallery</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem;">
+            <img src="https://live.staticflickr.com/4078/4912195893_2d20db3f3c_b.jpg" style="width:100%; height:250px; object-fit:cover; border-radius:12px;" alt="Cricket Match">
+            <img src="https://live.staticflickr.com/3231/2838287018_5ae79f6dae_b.jpg" style="width:100%; height:250px; object-fit:cover; border-radius:12px;" alt="Table Tennis">
+            <img src="https://live.staticflickr.com/8027/7699552360_219fcd5331_b.jpg" style="width:100%; height:250px; object-fit:cover; border-radius:12px;" alt="Tournament">
+        </div>
+        <p style="text-align:center; margin-top:2rem;"><strong>Recent Achievement:</strong> Data Science Dept won the Gold Medal in MNSUAM Intra-University Cricket League 2023.</p>
+    </section>
+
+<section id="register">
+    <h2 class="section-title">Register for Events</h2>
+    <form class="form-container" action="https://formsubmit.co/your-email@example.com" method="POST">
+        <input type="text" name="name" placeholder="Student Name" required>
+        <input type="text" name="roll" placeholder="Roll Number" required>
+        <select name="semester">
+            <option>1st Semester</option>
+            <option>3rd Semester</option>
+            <option>5th Semester</option>
+            <option>7th Semester</option>
+        </select>
+        <input type="tel" name="phone" placeholder="Contact Number" required>
+        <select name="sport">
+            <option>Cricket</option>
+            <option>Table Tennis</option>
+            <option>Badminton</option>
+        </select>
+        <button type="submit">Submit Registration</button>
+    </form>
+</section>
+
+<section id="faq">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <div style="max-width: 600px; margin: 0 auto;">
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">Who can join the DSSS? <span>+</span></button>
+            <div class="faq-answer">Any student currently enrolled in the Department of Data Science at MNSUAM is welcome to join our events.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">Is there a registration fee? <span>+</span></button>
+            <div class="faq-answer">Most of our internal events are free for DSSS members. Some inter-university tournaments may require a nominal participation fee.</div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" style="background:var(--navy); color:white;">
+    <h2 class="section-title" style="color:white;">Contact Us</h2>
+    <div style="text-align:center;">
+        <p>Email: sports@mnsuam.edu.pk</p>
+        <p>WhatsApp: <a href="https://wa.me/923000000000" style="color:var(--emerald);">+92 300 0000000</a></p>
+        <p style="margin-top: 1rem;">Socials: <a href="#" style="color:white; text-decoration:underline;">Instagram</a> | <a href="#" style="color:white; text-decoration:underline;">Facebook</a></p>
+    </div>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3448.24357288307!2d71.4988775!3d30.2016766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3939d37537367c3b%3A0x1d5823521b443026!2sMuhammad%20Nawaz%20Shareef%20University%20of%20Agriculture%2C%20Multan!5e0!3m2!1sen!2s!4v1698220000000!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Data Science Sports Society, MNSUAM.</p>
+</footer>
+
+  <script src="js/index.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>
